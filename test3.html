@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="作业3.css"/>
+</head>
+<body>
+    <div id="box">
+    <img src="image/登录界面.jpg" />
+    <div id="login">
+        <ul>
+            <li class="on">密码登录</li>
+            <li class="off">短信登录</li>
+			<li class="off">扫码登录</li>
+        </ul>
+        <form id="Accountlogin" class="show">
+            <div class="userid">
+                <div class="icon"><img src="image/22.png" alt=""></div>
+                <input type="text" placeholder="会员名/邮箱/手机号" id="name" name="username" required="required"/>
+            </div>
+            <div class="userid">
+                <div class="icon"><img src="image/1.png" alt=""></div>
+                <input type="password" placeholder="请输入登录密码" id="password" name="password" required="required"/>
+            </div>
+            <input class="login" type="submit" value="登录" id="submit" onclick="login()"/>
+        </form>
+        <form id="messagelogin" class="hide">
+            <div class="userid">
+                <div class="icon"><img src="image/22.png" alt=""></div>
+                <input type="text" placeholder="请输入手机号" id="name" name="username" required="required"/>
+            </div>
+            <div id="phone_yzm">
+                <div class="icon"><img src="image/1.png" alt=""></div>
+                <input type="password" placeholder="请输入验证码" id="password" name="password" required="required"/>
+                <div class="yzm">获取验证码</div>
+            </div>
+            <input class="login" type="submit" value="登录" id="submit" onclick="login()"/>
+        </form>
+		<form id="ewmlogin" class="hide">
+		    <div class="erm">
+		        <img src="image/二维码.jpg" />
+				<p>打开 手机淘宝|手机天猫 扫一扫</p>
+		    </div>
+		</form>
+    </div>
+    </div>
+    <script type="text/javascript" src="作业3.js"></script>
+</body>
+</html>
